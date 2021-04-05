@@ -1,0 +1,54 @@
+{%extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Login Page</title>
+</head>
+
+<body>
+
+{% block content_login%}
+
+
+</br>
+
+{% if message_5 %}
+    <p style="color:red">{{ message_5 }}</p>
+{% endif %}
+
+<form action = "/loginsuccess" method = "post">
+    <br>
+
+        <label for = "email">Email Address:</label>
+        <input type = "text" id = "email" name = "email" size = 50>
+
+        </br>
+
+        <label for = "password">Password:</label>
+        <input type = "text" id = "password" name = "password" size = 50>
+
+        </br>
+
+
+        <input type="checkbox" name="rememberme" value="True">
+        <label for="rememberme">Remember Me</label>
+
+        </br>
+        </br>
+
+        <!--    <input type = "button">     //-->
+        <input type = "submit" value = "Login">
+
+        </b>
+
+        </br>
+        </br>
+
+</form>
+
+{% endblock %}
+
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+{%extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Details Update Page</title>
+</head>
+
+<body>
+
+{% block content_userupdate%}
+
+
+</br>
+
+
+<form action = "/updateresults" method="post">
+    <br>
+        <label for = "userid" >User ID:</label>
+        <input type = "text" id = "userid" name = "userid" size = 50>
+
+        <label for = "firstname" >First Name:</label>
+        <input type = "text" id = "firstname" name = "firstname" size = 50>
+
+        </br>
+        </br>
+
+        <label for = "lastname">Last Name:</label>
+        <input type = "text" id = "lastname" name = "lastname" size = 50>
+
+        </br>
+        </br>
+
+        <label for = "email">Email Address:</label>
+        <input type = "text" id = "email" name = "email" size = 50>
+
+        </br>
+        </br>
+
+        <h6>Gender:</h6>
+        <input type = "radio" id = "male" name = "gender" value = "Male">
+        <label for = "male">Male</label>
+
+        </br>
+
+        <input type = "radio" id = "female" name = "gender" value = "Female">
+        <label for = "female">Female</label>
+
+        </br>
+
+        <input type = "radio" id = "other" name = "gender" value = "Other">
+        <label for = "other">Others</label>
+
+        </br>
+        </br>
+
+        <h6>Language:</h6>
+        <input type = "radio" id = "english" name = "languages" value = "English">
+        <label for = "english">English</label>
+
+        </br>
+
+        <input type = "radio" id = "german" name = "languages" value = "German">
+        <label for = "german">German</label>
+
+        </br>
+
+        <input type = "radio" id = "french" name = "languages" value = "French">
+        <label for = "french">French</label>
+
+        </br>
+
+        <input type = "radio" id = "other" name = "languages" value = "Other">
+        <label for = "other">Others</label>
+
+        </br>
+
+        <!--    <input type = "button">     //-->
+
+        </br>
+
+        <input type = "submit" value = "Update">
+
+        </br>
+
+        </br>
+        </br>
+
+</form>
+
+{% endblock %}
+
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+{%extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+< lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title%}HOME{% endblock %}</title>
+</head>
+
+<body>
+
+{% block content_home%}
+
+</b>
+</b>
+
+
+<h2>Introduction</h2>
+
+<p>Data Science field is like an ocean and there is always a lot to explore. Data is everywhere and has become extremely significant to handle and manage huge volume of data in various sectors.</p>
+<p>This website will help and assist you with the journey of learning python programming and data science as a new starter.</p>
+
+</body>
+
+<h2>Learning Path to become a Data Scientist</h2>
+
+<p>
+    <ol>
+        <li>Python Programming</li>
+        <li>Mathematics and Statistics</li>
+        <li>Web Development</li>
+        <li>Machine Learning</li>
+        <li>Data Analysis</li>
+        <li>Data Visualisation</li>
+        <li>Big Data Processing</li>
+    </ol>
+
+</p>
+
+<!--
+<p>
+    <h2>Test Image</h2>
+   <img src = "file:///Users/vidhyalakshmiparthasarathy/PycharmProjects/VP_Python_Projects/B_Flask-Web-Apps/B2_Simple-HTML-Based-Web-Application/static/images/Git_Profile_Image_1.jpeg">
+</p>
+//-->
+<!--
+127.0.0.1:5000/Users/vidhyalakshmiparthasarathy/PycharmProjects/VP_Python_Projects/B_Flask-Web-Apps/B2_Simple-HTML-Based-Web-Application/static/images/Python.jpg
+<p> <img src="file:///Users/vidhyalakshmiparthasarathy/PycharmProjects/VP_Python_Projects/B_Flask-Web-Apps/B2_Simple-HTML-Based-Web-Application/Image1.jpg">
+//-->
+
+<h2>Sub-Topics to be Focussed</h2>
+
+<p>
+    <table border = "5" cellpadding = "10" cellspacing = "10">
+        <tr>
+            <th>Sr.No</th>
+            <th>Python Programming</th>
+            <th>Web Development</th>
+            <th>Big Data Processing</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Python Fundamentals</td>
+            <td>Flask Web Framework</td>
+            <td>Hadoop</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Object Oriented Programming</td>
+            <td>Django Web Framework</td>
+            <td>Spark</td>
+        </tr>
+</table>
+
+</br>
+</br>
+
+</p>
+
+{% endblock %}
+
+
+{% block content_home_articles%}
+
+<h2>Articles List</h2>
+
+<p>
+
+    <table border = "5" cellpadding = "20" cellspacing = "10">
+        <tr>
+            <th>DB Article ID</th>
+            <th>Article Name</th>
+            <th>Article Description</th>
+        </tr>
+
+        <tr>
+            {% for r in result %}
+            <td>{{ r.article_id }}</td>
+            <td>{{ r.article_name }}</td>
+            <td>{{ r.article_description }}</td>
+            </tr>
+            {% endfor %}
+</table>
+
+
+</br>
+</br>
+
+</p>
+
+
+<h2>Articles Summary</h2>
+
+<p>
+
+    {% for r in result %}
+    <div><p>{{ r.article_name }}
+    <br>{{ r.article_description }}</br></p></div>
+    {% endfor %}
+
+</p>
+
+{% endblock %}
+
+<!--
+<h2>Python Learning Path</h2>
+<p> <img src="/Users/vidhyalakshmiparthasarathy/PycharmProjects/VP_Python_Projects/B_Flask-Web-Apps/B2_Simple-HTML-Based-Web-Application/static/images/Python.jpg" width="1000" height="1000"> </p>
+-->
+
+
+</body>
+
+</html>

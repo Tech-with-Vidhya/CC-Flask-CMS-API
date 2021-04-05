@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>{% block title%}{% endblock %}</title>
+</head>
+
+<h1><b>PYTHON FLASK BASED CONTENT MANAGEMENT SYSTEM - APIs</b></h1>
+
+<p>
+    <ul>
+        <li><h4><a href = "https://127.0.0.1:5000/">Home</a></h4></li>
+        <li><h4><a href = "https://127.0.0.1:5000/register">Register</a></h4></li>
+        <li><h4><a href = "https://127.0.0.1:5000/login">Login</a></h4></li>
+        <li><h4><a href = "https://127.0.0.1:5000/userdetails">User Details</a></h4></li>
+        <li><h4><a href = "https://127.0.0.1:5000/articles">Articles</a></h4></li>
+        <li><h4><a href = "https://127.0.0.1:5000/references">References</a></h4></li>
+        <li><h4><a href = "https://127.0.0.1:5000/external">External References</a></h4></li>
+    </ul>
+</p>
+
+    {% block Nav_Content%}{% endblock %}
+    <!--<h3>GOOD DAY...</h3>//-->
+    {% block content_home%}{% endblock %}
+    {% block content_home_articles%}{% endblock %}
+    {% block content_register%}{% endblock %}
+    {% block content_login%}{% endblock %}
+    {% block content_article%}{% endblock %}
+    {% block content_userdetails%}{% endblock %}
+    {% block content_reference%}{% endblock %}
+    {% block content_userupdate%}{% endblock %}
+    {% block content_externalreference%}{% endblock %}
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

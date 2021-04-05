@@ -1,0 +1,54 @@
+{%extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Articles</title>
+</head>
+<body>
+
+{% block content_article%}
+
+<h3>Please provide the details of the article:</h3>
+
+</br>
+
+
+{% if message_2 %}
+    <p style="color:red">{{ message_2 }}</p>
+{% endif %}
+
+{% if message_3 %}
+    <p style="color:green">{{ message_3 }}</p>
+{% endif %}
+
+
+<p>
+    <form action = "/process" method = "post">
+        <b>
+        <label for = "articlename" >Article Name:</label>
+        <input type = "text" id = "articlename" name = "articlename" size = 75>
+
+        </br>
+        </br>
+
+        <label for = "articledescription">Article Description:</label>
+            <textarea id = "articledescription" name = "articledescription" rows = "10" cols = "50"></textarea>
+
+            </br>
+            </br>
+
+            <input type = "submit" value = "Submit">
+
+        </b>
+    </form>
+
+</p>
+
+
+{% endblock %}
+
+
+</body>
+
+</html>

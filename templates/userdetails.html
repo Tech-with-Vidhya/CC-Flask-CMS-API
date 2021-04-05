@@ -1,0 +1,73 @@
+{%extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Page</title>
+</head>
+
+<body>
+
+{% block content_userdetails%}
+
+
+<h2>User Details</h2>
+
+
+<p>
+
+{% if message_6 %}
+    <p style="color:green">{{ message_6 }}</p>
+{% endif %}
+
+{% if message_7 %}
+    <p style="color:green">{{ message_7 }}</p>
+{% endif %}
+
+
+    <table border = "5" cellpadding = "10" cellspacing = "10">
+        <tr>
+            <th>User ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Address</th>
+            <th>Gender</th>
+            <th>Language</th>
+            <th>Action 1</th>
+            <th>Action 2</th>
+
+        </tr>
+
+        {% for u in user_result %}
+        <tr>
+            <td>{{ u.user_id }}</td>
+            <td>{{ u.first_name }}</td>
+            <td>{{ u.last_name }}</td>
+            <td>{{ u.email_address }}</td>
+            <td>{{ u.gender_u }}</td>
+            <td>{{ u.languages_u }}</td>
+            <td>
+                <a href="/update" class="btn btn-warning btn-xs">Edit</a>
+            </td>
+            <td>
+                <a href="/delete/{{u.user_id}}" class="btn btn-danger btn-xs" onclick="return confirm('Are you Sure to Delete ?')">Delete</a>
+            </td>
+        </tr>
+
+        {% endfor %}
+
+    </table>
+
+</br>
+</br>
+
+
+</p>
+
+{% endblock %}
+
+</body>
+
+
+</html>
+
