@@ -1,13 +1,13 @@
 # Python-Flask-PostgreSQL-Content-Management-Web-System-with-User-Registration - APIs Implementation
 
-A. Application Overview:
+**A. Application Overview:**
 
 This project repository includes a Web-based Content (Articles) Management System/Application related to Data Science Learning and Career Journey with User Registration, Login functionalities using Python, Flask Web Framework, HTML, PostgreSQL database and Heroku Cloud Server.
 
 This application is implemented and deployed in Heroku Cloud Server.
 
 
-B. Application Functionalities:
+**B. Application Functionalities:**
 
 1. New User Registration (First Name, Last Name, Email Address, Gender, Language, Password)
 2. Existing User Login
@@ -18,7 +18,7 @@ B. Application Functionalities:
 6. External References - covering mathematical functions for quick references
 
 
-C. Application Implementation:
+**C. Application Implementation:**
 
 This application includes REST APIs implementation and cloud based functionalities covering below:
 1. Application includes  GET, POST, PUT, DELETE methods implemented with relevant response codes 200(SUCCESS), 302(FOUND), 400(BAD REQUEST), 500(INTERNAL SERVER ERROR) adhering to the REST standards
@@ -29,7 +29,7 @@ This application includes REST APIs implementation and cloud based functionaliti
 6. PostgreSQL Database with role-based policies and privileges added
 
 
-D. Repository Source Code Package Contents
+**D. Repository Source Code Package Contents**
 
 a. Refer "README.md" (this file) for detailed information about the application and it's functionalities, technology stack, python packages, application implementation, application repository source code package and other instructions to execute, run the application.
 
@@ -54,7 +54,7 @@ e. Refer "app.py" file which is the main application python file to run the appl
 This includes all python import packages, environment (development, production), postgreSQL database configuration details, database models and various methods supporting REST APIs functionalities.
 
 
-E. Application Run/Execution
+**E. Application Run/Execution**
 
 Steps to be followed are:
 
